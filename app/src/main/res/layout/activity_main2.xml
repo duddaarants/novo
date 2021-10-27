@@ -4,49 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity2"
     android:background="@color/colorPrimaryDark"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/cat"
         android:layout_marginTop="50dp"
-        />
+        android:src="@drawable/cat" />
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Welcome!!"
-        android:textColor="#FFFEFC" />
+        android:textColor="#FFFEFC"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <TextView
-        android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:text="Espero que goste dessa experiência!"
         android:textColor="#4AFFFEFC"
-        android:layout_marginTop="10dp"
-        />
+        android:textSize="20dp" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Começar"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:background="@drawable/botao_redondo"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:textAllCaps="false"
-            />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/botao_redondo"
+        android:text="Começar"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

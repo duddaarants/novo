@@ -50,8 +50,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
-
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
@@ -59,9 +57,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@drawable/ic_baseline_crop_square_24" />
 
-
             <TextView
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -69,9 +65,7 @@
                 android:text="Remember Password"
                 android:textColor="#FFFEFC" />
 
-
         </LinearLayout>
-
         <Button
             android:id="@+id/btnEntrar"
             style="@style/Widget.AppCompat.Button.Borderless"
