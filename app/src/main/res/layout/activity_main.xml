@@ -1,62 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/azul"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/ic_baseline_brightness_3_24" />
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cat" />
 
         <EditText
+            android:id="@+id/edtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
             android:layout_marginTop="30dp"
-            android:drawableEnd="@drawable/ic_baseline_account_circle_24"
-            android:text="Insira seu email"
+            android:background="@drawable/borda"
+            android:drawableRight="@drawable/ic_baseline_account_circle_24"
+            android:padding="10dp"
+            android:text="@string/usuario"
             android:textAllCaps="false"
-            android:textColor="@color/white" />
+            android:textColor="#FFFFFF" />
 
         <EditText
+            android:id="@+id/edtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:drawableEnd="@drawable/ic_baseline_lock_24"
-            android:text="Insira sua senha"
-            android:textAllCaps="false"
-            android:textColor="@color/white" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginHorizontal="60dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp"
-            android:text="Entrar"
-            android:textColor="@color/white" />
+            android:background="@drawable/borda"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:padding="10dp"
+            android:text="@string/senha"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/ic_baseline_crop_square_24" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="52dp"
+                android:text="Remember Password"
+                android:textColor="#FFFEFC" />
+
+
+        </LinearLayout>
 
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/btnEntrar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="30dp"
-            android:text="Sair"
-            android:textColor="@color/white" />
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/entrar"
+            android:textAllCaps="false"
+            android:textColor="#F8F6F6"
+            android:textSize="18dp" />
 
 
     </LinearLayout>
+
+
 </LinearLayout>
